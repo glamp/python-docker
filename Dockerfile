@@ -1,4 +1,4 @@
-FROM default
+FROM base
 
 RUN apt-get -y install software-properties-common python g++ make git
 RUN apt-get install python-pip python-dev build-essential
