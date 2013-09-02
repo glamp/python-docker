@@ -10,3 +10,4 @@ RUN pip install -U scikit-learn
 RUN apt-get install -y python-pandas
 RUN easy_install statsmodels
 RUN pip install -U patsy
+RUN pip install -U yhat
