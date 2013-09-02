@@ -13,4 +13,4 @@ RUN pip install -U patsy
 RUN pip install -U yhat
 
 # yhat executable
-ADD ./cmd-line-app
+ADD . ./cmd-line-app
