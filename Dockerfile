@@ -14,3 +14,5 @@ RUN pip install -U yhat
 
 # yhat executable
 ADD . ./cmd-line-app
+RUN cd /cmd-line-app
+CMD  tail -f testdata/test.json | python main.py --model predictors/user_models/python_beer_rec/model_bundle.json --lang python
