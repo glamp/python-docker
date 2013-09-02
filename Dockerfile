@@ -13,8 +13,8 @@ RUN pip install -U patsy
 RUN pip install -U yhat
 
 # yhat executable
-ADD . /yhat-cmd/
-RUN cd /yhat-cmd
+# ADD . /yhat-cmd/
+# RUN cd /yhat-cmd
 
 
-CMD  tail -f /yhat-cmd/testdata/test.json | python /yhat-cmd/main.py --model /yhat-cmd/predictors/user_models/python_beer_rec/model_bundle.json --lang python
+# CMD  tail -f /yhat-cmd/testdata/test.json | python /yhat-cmd/main.py --model /yhat-cmd/predictors/user_models/python_beer_rec/model_bundle.json --lang python
