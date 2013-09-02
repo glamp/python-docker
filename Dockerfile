@@ -13,8 +13,9 @@ RUN pip install -U patsy
 RUN pip install -U yhat
 
 # yhat executable
- ADD . /cmd-line-app
- RUN cd /cmd-line-app
+ADD . /cmd-line-app
+RUN cd /cmd-line-app
 
+CMD /cmd-line-app/run.sh
 
 # CMD  tail -f /yhat-cmd/testdata/test.json | python /yhat-cmd/main.py --model /yhat-cmd/predictors/user_models/python_beer_rec/model_bundle.json --lang python
