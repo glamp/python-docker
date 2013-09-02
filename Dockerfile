@@ -7,7 +7,6 @@ RUN easy_install pip
 RUN apt-get install -y python-numpy
 RUN apt-get install -y python-scipy
 RUN pip install -U scikit-learn
-RUN easy_install pandas
+RUN apt-get install -y python-pandas
 RUN easy_install statsmodels
 RUN pip install -U patsy
-
