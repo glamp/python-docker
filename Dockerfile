@@ -9,5 +9,5 @@ RUN apt-get install -y python-scipy
 RUN pip install -U scikit-learn
 RUN easy_install pandas
 RUN easy_install statsmodels
-RUN pip install --upgrade patsy
+RUN pip install -U patsy
 
