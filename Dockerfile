@@ -1,5 +1,5 @@
 FROM base
-
+RUN apt-get update
 RUN apt-get -y install software-properties-common python g++ make git
 RUN apt-get -y install python-setuptools
 RUN apt-get -y install python-dev build-essential
